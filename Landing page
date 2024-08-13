@@ -1,0 +1,70 @@
+import React from 'react';
+import './App.css';
+
+function App() {
+  return (
+    <div className="App">
+      <Navbar />
+      <Hero />
+      <Menu />
+      <Footer />
+    </div>
+  );
+}
+
+const Navbar = () => {
+  return (
+    <nav className="navbar">
+      <div className="logo">Restaurant Name</div>
+      <ul className="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  );
+};
+
+const Hero = () => {
+  return (
+    <section className="hero" id="home">
+      <div className="hero-content">
+        <h1>Welcome to Our Restaurant</h1>
+        <p>Delicious food, served with love.</p>
+        <a href="#menu" className="cta-button">Explore Menu</a>
+      </div>
+    </section>
+  );
+};
+
+const Menu = () => {
+  return (
+    <section className="menu" id="menu">
+      <h2>Our Menu</h2>
+      <div className="menu-items">
+        <div className="menu-item">
+          <h3>Pizza</h3>
+          <p>A delicious cheese and tomato pizza.</p>
+        </div>
+        <div className="menu-item">
+          <h3>Burger</h3>
+          <p>Juicy beef burger with fresh lettuce.</p>
+        </div>
+        <div className="menu-item">
+          <h3>Pasta</h3>
+          <p>Classic Italian pasta with a rich sauce.</p>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+const Footer = () => {
+  return (
+    <footer className="footer">
+      <p>&copy; 2024 Restaurant Name. All rights reserved.</p>
+    </footer>
+  );
+};
+
+export default App;
